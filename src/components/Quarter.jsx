@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Field from "./Field";
 import FinalizeButton from "./FinalizeButton";
 import styled from "styled-components";
+import Links from "./ui/Links";
 
 const StyledStartButton = styled.button`
   background-color: #7cb9e8;
@@ -121,26 +122,7 @@ const Quarter = () => {
 
   return (
     <QuarterSquare>
-      <div style={{ display: "flex", flexDirection: "row" }}>
-        <a
-          style={{ cursor: "pointer", scale: 0.7 }}
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        >
-          🔴
-        </a>
-        <a
-          style={{ cursor: "pointer", scale: 0.7 }}
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        >
-          🟠
-        </a>
-        <a
-          style={{ cursor: "pointer", scale: 0.7 }}
-          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-        >
-          🟢
-        </a>
-      </div>
+      <Links />
       <div>
         <h1>Tic-Tac-Toe</h1>
         {!gameStarted ? (
