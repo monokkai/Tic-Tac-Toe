@@ -128,7 +128,7 @@ const Quarter = () => {
             <p>Enter to play: </p>
             <div style={{ alignItems: "center" }}>
               <label>
-                Игрок ❌:
+                Player ❌:
                 <input
                   type="text"
                   value={playerX}
@@ -145,7 +145,7 @@ const Quarter = () => {
             </div>
             <div>
               <label>
-                Игрок ⭕️:
+                Player ⭕️:
                 <input
                   type="text"
                   value={playerO}
