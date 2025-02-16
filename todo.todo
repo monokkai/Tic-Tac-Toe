@@ -1,5 +1,6 @@
-☐ Add the switching between X and O
-    On the top of play screen
+✔ Add the switching between X and O @done(25-02-16 21:40)
 ✔ Add restart button @started(25-02-15 09:56) @done(25-02-15 09:56) @lasted(35s)
 ✔ Add fields with X and O @done(25-02-15 09:57)
-☐ Logic when someone plays and wins the game @started(25-02-15 09:58)
+✔ Logic when someone plays and wins the game @started(25-02-15 09:58) @done(25-02-16 21:40) @lasted(1d11h42m10s)
+✔ Added "Registration" with Names @started(25-02-16 21:40) @done(25-02-16 21:40) @lasted(24s)
+☐ More animations @started(25-02-16 21:40)
