@@ -132,7 +132,7 @@ const Quarter = () => {
                 <input
                   type="text"
                   value={playerX}
-                  onChange={(e) => setPlayerX(e.target.value)}
+                  onChange={(registered) => setPlayerX(registered.target.value)}
                   placeholder="Enter the name"
                   style={{
                     padding: "10px",
@@ -149,7 +149,7 @@ const Quarter = () => {
                 <input
                   type="text"
                   value={playerO}
-                  onChange={(e) => setPlayerO(e.target.value)}
+                  onChange={(registered) => setPlayerO(registered.target.value)}
                   placeholder="Enter the name"
                   style={{
                     padding: "10px",
