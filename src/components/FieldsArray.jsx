@@ -4,7 +4,7 @@ import styled from "styled-components";
 const StyledCell = styled.div`
   border: 0;
   border-radius: 8px;
-  background-color:rgb(245, 245, 245);
+  background-color: rgb(245, 245, 245);
   transition: all 0.3s ease-in-out;
   scale: 1;
   display: grid;
@@ -14,14 +14,14 @@ const StyledCell = styled.div`
   height: 70px;
   cursor: pointer;
   align-items: center;
-  marign: 0 auto;
+  margin: 0 auto;
 
   &:hover {
     scale: 1.05;
   }
 `;
 
-const FieldsArray = () => {
+const FieldsArray = ({ board, handleCellClick }) => {
   return (
     <div
       style={{
@@ -29,40 +29,17 @@ const FieldsArray = () => {
         flexWrap: "wrap",
         display: "flex",
         flexDirection: "row",
-        flexWrap: "wrap",
         gap: "6px",
         width: "100%",
         alignItems: "center",
         textAlign: "center",
       }}
     >
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
-      <StyledCell>
-        <div>&nbsp;</div>
-      </StyledCell>
+      {board.map((cell, index) => (
+        <StyledCell key={index} onClick={() => handleCellClick(index)}>
+          <div>{cell}</div>
+        </StyledCell>
+      ))}
     </div>
   );
 };

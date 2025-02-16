@@ -1,6 +1,5 @@
-import React from "react";
-import styled from "styled-components";
 import FieldsArray from "./FieldsArray";
+import React from "react";
 
 const PlayerField = ({ children }) => {
   return (
@@ -11,7 +10,6 @@ const PlayerField = ({ children }) => {
         flexWrap: "wrap",
         display: "flex",
         flexDirection: "row",
-        flexWrap: "wrap",
         gap: "6px",
         alignItems: "center",
         textAlign: "center",
@@ -22,10 +20,10 @@ const PlayerField = ({ children }) => {
   );
 };
 
-const Field = (props) => {
+const Field = ({ board, handleCellClick }) => {
   return (
     <PlayerField>
-      <FieldsArray />
+      <FieldsArray board={board} handleCellClick={handleCellClick} />
     </PlayerField>
   );
 };
